@@ -1,0 +1,25 @@
+//: # W3D2 - Optionals
+//: 
+//: ## Challenge 1
+
+var inputString = "hello"
+var converted = Int(inputString) // this is an "Int?" because it’s an optional
+
+//: ## Challenge 2
+
+var number = Int("🔥")
+number! + 1 // this crashes the playground because number is nil and we’re force-unwrapping it.
+
+//: ## Challenge 3
+
+// no answer, just explore conditional unwraps by changing the value of number to nil or some number.
+
+//: ## Challenge 4
+
+var greeting: String? = "Aloha!" // should try changing this to nil to make sure both the if and the else part work.
+
+if let greeting = greeting {
+    print(greeting)
+} else {
+    print("no greeting")
+}
