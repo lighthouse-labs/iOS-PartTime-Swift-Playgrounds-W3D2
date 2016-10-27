@@ -92,10 +92,10 @@ var greeting: String? = "Aloha!"
 //: Have a look at the following code:
 
 var number1 = 10 // a number
-var advancedNumber1 = number1.advancedBy(10) // advanced by 10, should be 20
+var advancedNumber1 = number1.advanced(by: 10) // advanced by 10, should be 20
 
 var number2 = Int("10") // maybe a number
-var advancedNumber2 = number2?.advancedBy(10) // advanced by 10, should be maybe 20
+var advancedNumber2 = number2?.advanced(by: 10) // advanced by 10, should be maybe 20
 
 //: Use option-click to look at all the variables to get clear on their types. Notice that because `number2` is optional, `advancedNumber2` is also optional. What we're doing with `number2` is called optional-chaining. That's the question mark between `number2` and `.advanceBy(10)`. Using this we can call methods (like `advanceBy`) on variables that are optional.
 //:
