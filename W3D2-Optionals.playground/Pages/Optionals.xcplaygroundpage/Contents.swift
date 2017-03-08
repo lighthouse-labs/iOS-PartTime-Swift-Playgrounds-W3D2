@@ -8,7 +8,7 @@ import UIKit
 //: First let's start with a conversion that doesn't require optionals. If we have a Double and an Int, and we want to do math with them, the compiler won't let us. This is because we can't add two different types together.
 
 var ratio: Double = 10.0 // ratio is a Double
-var count: Int = 20 // count is a count
+var count: Int = 20 // count is an Int
 
 // ratio * count // this line does not compile.
 
