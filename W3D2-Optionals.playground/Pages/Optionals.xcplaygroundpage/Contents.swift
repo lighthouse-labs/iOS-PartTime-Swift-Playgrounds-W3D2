@@ -40,7 +40,7 @@ var convertedNum = Double(numberString) //convert numberString to a Double
 //:
 //: To use our optional Int, we need to unwrap it. There are a few ways to unwrap variables, and we'll need to know at least two of them.
 //:
-//: The first and most dangerous way is by adding an exclaimation point. This is called "force unwrapping". It will make the compiler ignore the optional and use the contents. So if `convertedNum` contains a number, but it will crash the Playground if our `numberString` contains something that can't be converted to a number.
+//: The first and most dangerous way is by adding an exclaimation point. This is called "force unwrapping". It will make the compiler ignore the optional and use the contents of `convertedNum`.  So if `convertedNum` does contain a number, the unwap will succeed.  However, the force-unwrap will crash the Playground if our `numberString` contained something that couldn't be converted to a number.
 
 //: ## Challenge 1
 //:
@@ -54,11 +54,15 @@ var inputString = "hello"
 //:
 //: ## Challenge 2
 //:
-//: First, make the second line below compile by adding a force unwrap.
+//: First, uncomment the second line below
+//:
+//: Next, make the second line below compile by adding a force unwrap.
+//:
 //: Then, change the string "1" to "🔥" and observe how the playground responds (or doesn't respond)
 
-var number = Int("🔥")
+var number = Int("1")
 // number + 1 // uncomment and fix this.
+
 
 //: In general, force unwrapping is always a risk for a crash, and should be used sparingly and with caution.
 //:
