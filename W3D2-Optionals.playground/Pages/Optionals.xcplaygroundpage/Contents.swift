@@ -69,7 +69,7 @@ var number = Int("🔥")
 //: The next way to deal with optionals is called "Conditional unwrapping" or sometimes casually called an "if-let". It's **much** safer, and won't break your Playground.
 //:
 //: The code below uses a conditional unwrap on `number`. This creates a new variable "unwrapped", but only if `number` is *not* nil. If you option click on the variable `unwrapped` you will notice that it is an `Int` not an `Int?`
-//: 
+//:
 //: Switch the string we're converting in Challenge 2 to something that succeeds and back to something that fails and observe how different bits of code get run.
 
 if let unwrapped = number {
@@ -100,7 +100,7 @@ var advancedNumber2 = number2?.advanced(by: 10) // advanced by 10, should be may
 //: Use option-click to look at all the variables to get clear on their types. Notice that because `number2` is optional, `advancedNumber2` is also optional. What we're doing with `number2` is called optional-chaining. That's the question mark between `number2` and `.advanceBy(10)`. Using this we can call methods (like `advanceBy`) on variables that are optional.
 //:
 //: There are two important side effects of optional chaining:
-//: 
+//:
 //: 1. If `number2`'s value is `nil`, advanceBy will not be run.
 //: 2. Even though `advanceBy` always succeeds, since it's not always run, `advancedNumber2` is an optional.
 
@@ -110,7 +110,3 @@ var advancedNumber2 = number2?.advanced(by: 10) // advanced by 10, should be may
 //: Optionals are a great way of handling complexity, but you have to understand how to work with them. If you have an optional (e.g. `Double?`) and want to convert it to a non-optional (e.g. `Double`), use an if let statement to safely unwrap it. Avoid using force-unwraps when at all possible, as they make your code less stable and less predictable.
 //:
 //: Optional chaining allows you to put off unwrapping, but it doesn't avoid it entirely.
-
-
-
-//: [Next](@next)
